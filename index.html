@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Challenge de Encriptador y Desencriptador de texto</title>
+  <script src=".js"></script>
+</head>
+<body>
+  <main class="main">
+    <div class="logo">
+      <img class="logo" src="img/Vector.png" alt="logo">
+    </div>
+    <div class="ingreso">
+      <textarea placeholder="Ingrese el texto a encriptar - desencriptar" id="texto"></textarea>
+      
+      <p><img src="img/Vector (7).png" alt="advertencia">Solo letras minúsculas y sin acentos</p>
+      <div class="button">
+        <input id="encri" type="button" onclick="encriptar()" value="Encriptar">
+        <input id="desen" type="button" onclick="desencriptar()" value="Desencriptar">
+      </div>
+    </div>
+    <div class="producto">
+      <img id="imag" src="img/buscando2.webp">
+      <div>
+        <p class="retorna" style="display: none;" id="retorna"> </p>
+        <h2 id="default">Ningún mensaje fue encontrado</h2>
+        <p id="aviso">Ingrese el texto que desea encriptar o desencriptar</p>
+        <button class="copiar" style="display: none;" id="copiar" onclick="copiar()">Copiar</button>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <ul>
+        
+        <li>Vanessa Andreina Liria Castillo</li>
+        <li>proyectogit53@gmail.com</li>
+        <li><img id="logo-ig" src="img/ig logo.jpg" alt="instagram"><a href="https://www.instagram.com/vanegit53/"> @vanegit53</a></li>
+        <li><img id="logo-git" src="img/GitHub-Mark.png" alt="github"><a href="https://github.com/vanemartin"> @vanemartin / </a></li>
+        <li><img id="Alura-Oracle" src="img/img challenge.png" alt="challenge"></li>
+    </ul>
+</footer>
+</body>
+</html>
+

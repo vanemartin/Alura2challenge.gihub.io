@@ -1,0 +1,237 @@
+* body{
+    margin: 0;
+    padding: 0;
+  }
+
+  body{
+    background-color: #939cbd;
+    height: 100vh;
+    font-family: 'Inter';
+    font-style: normal;
+  }
+  
+  .main{
+    position: relative;
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 5vh;
+  }
+
+  .logo{
+
+    height: 48px;
+    width: 31.085588455200195px;
+    left: 44px;
+    top: 0px;
+    border-radius: 0px;
+    padding: 20px;
+    }
+
+  .ingreso{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 360px;
+    padding-top: 100px;
+    align-items: center;
+  }
+
+  .ingreso textarea{
+    
+    font-size: 16px;
+    width: 90%;
+    height: 90%;
+    border: none;
+    background-color: #F3F5FC;
+    padding:10px;
+    margin-bottom: 10px;
+  }
+
+  .ingresogit textarea:focus{
+    outline: 1px solid #0A3871;
+  }
+
+  .exclamacion{
+    vertical-align: text-bottom;
+    padding-right: 10px;
+    width: 25px;
+  }
+
+  .advertencia{
+    display: inline;
+    align-self: flex-start;
+    padding-bottom: 10px;
+    padding-left: 10px;
+  }
+
+  .button{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-evenly;
+  }
+
+  .button:hover, input {
+    background: rgba(0,0,0,0);
+    color: #586870;
+    box-shadow: inset 0 0 0 3px #ec50be;
+}
+
+  .button input, .copiar{
+    padding: 15px;
+    height: 3.5rem;
+    border-radius: 30px;
+    border: none;
+    font-size: 16px;
+    box-shadow: inset 0 0 0 3px #ec50be;
+  }
+
+  #encri{
+    color:white;
+    background-color: #0A3871;
+    width: 40%;
+  }
+
+  #encri:hover{
+    background-color: #0a3871cc;
+    cursor: pointer;
+  }
+
+  #desen,.copiar{
+    color: #0A3871;
+    background-color: #D8DFE8;
+    border: 1px solid #0A3871;
+    width: 40%;
+  }
+
+  #desen:hover, .copiar:hover{
+    background-color: #d8dfe8a1;
+    cursor: pointer;
+  }
+
+  #encri:hover:active, #desen:hover:active{
+    transform:translateY(2px);
+  }
+
+  .copiar{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+  }
+
+  .copiar:hover:active{
+    transform: translate(-65px) scaleX(1.1);
+    
+  }
+  
+  .producto{
+    margin: 40px;
+    justify-content: center;
+    padding: 40px;
+    background-color: white;
+    border-radius: 32px;
+    text-align: center  ;
+    width: 250px;
+    height: 440px;
+    position: relative;
+    top:10px;
+    bottom: 10px;
+    box-shadow: 1px 25px 30px 2px rgba(0,0,0,0.07);
+    -webkit-box-shadow: 1px 25px 30px 2px rgba(0,0,0,0.07);
+    -moz-box-shadow: 1px 25px 30px 2px rgba(0,0,0,0.07);
+  }
+
+  .producto img{
+    width: 250px;
+  }
+
+  footer{
+    background-color: #FFFFFF;
+    color: #2b9aa8;
+    font-size: 20px;
+    padding: 10px;
+    line-height: 30px;
+    box-shadow: 0px 45px 56px 15px rgb(0 0 0);
+    border-radius: 40px 40px 0px 0px;
+}
+
+footer ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+}
+
+footer ul li{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+footer ul li a:link, a:visited, a:active{
+    text-decoration: none;
+    color: #343A40;
+}
+
+#logo-ig{
+    padding: 5px;
+    width: 40px;
+}
+
+#logo-git{
+    padding: px;
+    width: 40px;
+}
+
+#Alura-oracle{
+    padding: 10px;
+    width: 250px;
+}
+  
+  @media screen and (max-width: 1030px) {
+    .button{
+      flex-direction: column;
+      align-items: center;
+      gap: 5px;
+    }
+    #encri{
+      width: 90%;
+    }
+    #desen{
+      width: 90%;
+    }
+    #imag{
+      display: none;
+    }
+    .advertencia{
+      font-size: 0.7rem;
+    }
+    .exclamacion{
+      width: 20px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .button{
+      flex-direction: column;
+      align-items: center;
+      gap: 5px;
+    }
+    #encri{
+      width: 90%;
+    }
+    #desen{
+      width: 90%;
+    }
+    .advertencia{
+      font-size: 0.7rem;
+    }
+    .exclamacion{
+      width: 20px;
+    }
+  }
+
